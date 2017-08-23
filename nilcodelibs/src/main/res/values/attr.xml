@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--换行布局AutoWrapLayout的上下左右间距-->
+    <declare-styleable name="AutoWrapLayout">
+        <attr name="singleLeft" format="dimension" />
+        <attr name="singleTop" format="dimension" />
+        <attr name="singleRight" format="dimension" />
+        <attr name="singleBottom" format="dimension" />
+    </declare-styleable>
+</resources>
