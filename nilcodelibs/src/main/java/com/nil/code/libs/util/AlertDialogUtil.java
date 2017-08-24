@@ -55,7 +55,7 @@ public class AlertDialogUtil {
         WindowManager.LayoutParams layoutParams = window.getAttributes();
         window.setGravity(Gravity.CENTER);
         //(int) (density * width)
-        layoutParams.width = (int) (120 * density);
+        layoutParams.width = (int) (density * width);
         layoutParams.height = (int) (density * height);
         //设置布局偏移
         layoutParams.y = -70;
