@@ -3,7 +3,6 @@ package com.nil.code.libs.util;
 import android.content.Context;
 import android.os.Environment;
 import android.os.StatFs;
-import android.os.storage.StorageManager;
 import android.support.v4.content.ContextCompat;
 
 import java.io.File;
