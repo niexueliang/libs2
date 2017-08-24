@@ -48,16 +48,15 @@ public class AlertDialogUtil {
     }
 
 
-
-    public AlertDialogUtil showPostion(int width, int height,int y) {
+    public AlertDialogUtil showPostion(int width, int height, int y) {
         //需要首先显示不然将会无法设置布局大小
         alertDialog.show();
         Window window = alertDialog.getWindow();
         WindowManager.LayoutParams layoutParams = window.getAttributes();
         window.setGravity(Gravity.CENTER);
         //(int) (density * width)
-        layoutParams.width = (int) (density * width);
-        layoutParams.height = (int) (density * height);
+        layoutParams.width = width;
+        layoutParams.height = height;
         //设置布局偏移
         layoutParams.y = y;
         window.setAttributes(layoutParams);
