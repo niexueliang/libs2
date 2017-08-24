@@ -6,8 +6,10 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 /**
  * Created by Mwh on 2017/8/23.
@@ -45,10 +47,9 @@ public class AlertDialogUtil {
         return this;
     }
 
-    /**
-     * 自定义显示位置，居中显示
-     */
-    public AlertDialogUtil showPostion(int width, int height) {
+
+
+    public AlertDialogUtil showPostion(int width, int height,int y) {
         //需要首先显示不然将会无法设置布局大小
         alertDialog.show();
         Window window = alertDialog.getWindow();
@@ -58,7 +59,7 @@ public class AlertDialogUtil {
         layoutParams.width = (int) (density * width);
         layoutParams.height = (int) (density * height);
         //设置布局偏移
-        layoutParams.y = -70;
+        layoutParams.y = y;
         window.setAttributes(layoutParams);
         return this;
     }
